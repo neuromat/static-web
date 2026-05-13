@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+
+    
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/nes-a-free-software-to-manage-data-from-neuroscience-experiments/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:03:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="Neuroscientists perform complex experiments aiming to reach a more effective understanding about the functioning of the brain and the treatment of its pathologies. Each research laboratory uses different techniques and methodologies to produce and to analyze its findings. These experiments generate large volumes of data in diverse formats. Furthermore, with the increasing of the scale of research projects, many research laboratories are confronted with new technical (e.g. data size, quality control, analysis complexity, guaranteed reproducibility) and social (e.g. employee turnover, data sharing requirements) challenges. In addition, there is a lack of computational tools to document the experiments, to facilitate the electronic data capture, and to support reproducibility.">
+        <title>NES: a free software to manage data from neuroscience experiments | NeuroMat</title>
+        <link rel="shortcut icon" href="../../static/img/favicon.ico">
+
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../feeds/rss/index.html">
+            <link rel="alternate" type="application/atom+xml" title="Atom" href="../feeds/atom/index.html">
+        
+
+        
+            <link rel="stylesheet" href="../../static/css/bootstrap.css">
+            <link rel="stylesheet" href="../../static/css/mezzanine.css">
+            <link rel="stylesheet" href="../../static/css/style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+            
+        
+
+        
+            <script src="../../static/mezzanine/js/jquery-1.8.3.min.js"></script>
+            <script src="../../static/js/bootstrap.js"></script>
+            <script src="../../static/js/bootstrap-extras.js"></script>
+            
+        
+
+        <!-- Simple javascript notifications -->
+        <link href="../../static/toastr/toastr.css" rel="stylesheet"/>
+        <script src="../../static/toastr/toastr.js"></script>
+        <script src="../../static/toastr/toastr_messages.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="/static/js/html5shiv.js"></script>
+        <script src="/static/js/respond.min.js"></script>
+        <![endif]-->
+
+        
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+    </head>
+
+    <body id="body">
+        
+
+        
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header col-sm-6 col-md-5">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="margin-right: -5px">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <a class="top-neuromat" href="../../index.html">NeuroMat</a>
+                <p class="top-small">Research, Innovation and Dissemination Center for <br>Neuromathematics</p>
+            
+        </div>
+        <div class="navbar-collapse collapse" style="margin-right:15px; margin-bottom:0;">
+            
+<form action="https://neuromat.numec.prp.usp.br/search/" class="navbar-form navbar-right" role="search">
+
+    <div class="form-group">
+        <input class="form-control" placeholder="Search" type="text" name="q" value="">
+        <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
+    </div>
+
+    
+
+</form>
+
+        </div>
+        <div class="navbar-collapse collapse idioma">
+        </div>
+        <nav class="navbar navbar-inverse navbar-collapse collapse">
+            
+<ul class="nav navbar-nav"><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            About NeuroMat
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="who-we-are"><a href="../../who-we-are/index.html">Who we are</a></li><li class="
+                               "
+                        id="the-neuromat-project"><a href="../../the-neuromat-project/index.html">The NeuroMat Project</a></li><li class="
+                               "
+                        id="team"><a href="../../team/index.html">Team</a></li><li class="
+                               "
+                        id="reports"><a href="../../reports/index.html">Reports</a></li><li class="
+                               "
+                        id="contact"><a href="../../contact/index.html">Contact</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Research
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="scientific-project"><a href="../../scientific-project/index.html">Scientific Project</a></li><li class="
+                               "
+                        id="-content-category-publications-"><a href="../category/publications/index.html">Publications</a></li><li class="
+                               "
+                        id="-content-category-lectures-"><a href="../category/lectures/index.html">Lectures</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Innovation
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="open-science"><a href="../../open-science/index.html">Open Science</a></li><li class="
+                               "
+                        id="neuromatdb"><a href="../../neuromatdb/index.html">NeuroMat Databases</a></li><li class="
+                               "
+                        id="goalkeeper-game"><a href="../../goalkeeper-game/index.html">The Goalkeeper Game</a></li><li class="
+                               "
+                        id="nes"><a href="../../nes/index.html">NES</a></li><li class="
+                               "
+                        id="nira"><a href="../../nira/index.html">NIRA</a></li><li class="
+                               "
+                        id="intellectual-property"><a href="../../intellectual-property/index.html">Intellectual Property</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Dissemination
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="-content-category-news-"><a href="../category/news/index.html">News</a></li><li class="
+                               "
+                        id="-content-category-streaming"><a href="../category/streaming/index.html">Videos</a></li><li class="
+                               "
+                        id="-content-category-radiocast-"><a href="../category/radiocast/index.html">Radio</a></li><li class="
+                               "
+                        id="-newsletter-previous"><a href="../../newsletter/previous/index.html">Newsletter</a></li></ul></li><li class="
+                               "
+                        id="-content-category-events-"><a href="../category/events/index.html"
+                            >
+                            Events
+                            
+                        </a></li><li class="
+                               "
+                        id="-content-category-opportunities-"><a href="../category/opportunities/index.html"
+                            >
+                            Opportunities
+                            
+                        </a></li></ul>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <img src="../../static/img/neuromat.png" class="img-responsive center-block" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 middle">
+                    
+
+    <h3>
+        NES: a free software to manage data from neuroscience experiments
+    </h3>
+
+    
+    
+        
+            <h6 class="post-meta">
+                Aug 31, 2017
+            </h6>
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <p align="justify">Neuroscientists perform complex experiments aiming to reach a more effective understanding about the functioning of the brain and the treatment of its pathologies. Each research laboratory uses different techniques and methodologies to produce and to analyze its findings. These experiments generate large volumes of data in diverse formats. Furthermore, with the increasing of the scale of research projects, many research laboratories are confronted with new technical (e.g. data size, quality control, analysis complexity, guaranteed reproducibility) and social (e.g. employee turnover, data sharing requirements) challenges. In addition, there is a lack of computational tools to document the experiments, to facilitate the electronic data capture, and to support reproducibility.</p>
+<p align="justify">In this scenario, the Research, Innovation and Dissemination Center for Neuromathematics (NeuroMat) has developed the Neuroscience Experiments System (NES), a free software to manage data from neuroscience experiments. NES is a web-based system that provides an environment to record data and metadata from each step of a neuroscience experiment in a secure and user friendly platform. It was developed to assist researchers in their data collecting routine throughout a neuroscience experiment, integrating data records from different types such as clinical, electrophysiological, and behavioral. Furthermore, it provides a unified repository (database) for the experimental data of an entire research laboratory, group, or project.</p>
+<p align="justify">NES has been the object of several pieces of the NeuroMat newsletter, including <a href="../in-neuromathematics-the-reaching-of-a-frontier-of-science-means-courageous-software-development/index.html" target="_blank"><span color="blue">the methodology that the development team has relied on to work on the software</span></a>, <a href="../neuromat-develops-an-open-source-software-for-the-management-of-neuroscience-experimental-data/index.html" target="_blank"><span color="blue">the release of ongoing versions to receive feedbacks from users and potential users</span></a>, <a href="../a-neuromat-software-nes-makes-the-headlines/index.html" target="_blank"><span color="blue">the media impact of the release of this tool</span></a>, and <a href="../new-functionalities-to-store-neuroscience-data-and-metadata-in-neuromats-freely-shared-computational-tool/index.html" target="_blank"><span color="blue">the flow of functionalities that were produced in the run</span></a>.</p>
+<p align="justify"><strong>Types of data manageable with NES</strong></p>
+<p align="justify">NES was developed to keep together experimental data and its fundamental provenance information, defined by the seven W's (Who, What, Where, Why, When, Which, (W) how) [1]. Examples of provenance information maintained by NES are: information about the scientists responsible for the experiment and collection of data and the description of the subject groups (who); the details about the recording protocol or behavioral data collection (e.g. the types of data collection performed) (what); the details of the experimental protocol used in the collection of primary data (how); the start/end date time for data collection (when); the purpose of the experiment (why); the information about the experimental conditions to which the groups of subjects are submitted, such as tasks to perform and stimulus to apply (which); the information about the laboratory where data was collected (where) and even publications or other results that have arisen from the study of the collected data. Scientists can also record additional details for each experiment&rsquo;s volunteer, such as the information about his/her clinical history and sociodemographic data.</p>
+<p align="justify">In NES, each primary data acquired from an experiment is always associated to a study participant and to a specific step of the experimental protocol. For this reason, before storing the primary data collected in an experiment, the researcher needs to record in detail each step involved in the experimental protocol (e.g., the specific preparation for the realization of the experiment). The experimental protocol is described as a workflow, that can contain both sequential and parallel steps. With this, NES provides a structured and comprehensive platform with a robust tracking of data provenance that is fundamental to enable the reproduction of the experiment.</p>
+<p align="justify">It is worth mentioning that NES is not a new proposal to standardize the experimental data representation. There are several models and formats (e.g. <a href="https://portal.g-node.org/neo/neohdf5/" target="_blank"><span color="blue">NeoHDF5</span></a>, <a href="http://www.nwb.org/" target="_blank"><span color="blue">NWB</span></a>, <a href="https://github.com/G-Node/nix" target="_blank"><span color="blue">NIX</span></a>) currently in development to address this issue. These models are appropriate for organizing and exchanging data of a particular type and from a particular experiment. However, they do not replace the function of a database.</p>
+<p align="justify">A database system keeps large data volumes and provides functionalities for access control, data consistency, fault tolerance and efficient data recovery. Furthermore, on a database it is possible to store the relationships among different types of data from different experiments, allowing for more sophisticate data analysis which are specially valuable to support advances in the healthcare domain.</p>
+<p align="justify">The data model used in NES is aligned with several formats used in neuroscience, enabling interoperability with the most promising initiatives for standardization of data representation for electrophysiology, as much as with guidelines to report neuroscience experiments (e.g., MINI [2]; MINEMO [3]; fMRI [4]). Currently, NES is able to manage several types of electrophysiological data and metadata used by the neuroscience community.</p>
+<p align="justify"><strong>NES's functionalities</strong></p>
+<p align="justify">The main functionalities of NES can be grouped in the following:</p>
+<ul>
+<li align="justify">Participant registration: consider participants' personal data, social-demographic data, social history, and medical evaluations.</li>
+<li align="justify">Experiment management: experiment registration and configuration. The experiments may involve several types of components (e.g., tasks, stimuli, instructions, electroencephalogram (EEG), electromyogram (EMG), transcranial magnetic stimulation (TMS), questionnaire administration, and other types of data collection). Configuration includes the equipment settings and other general characterizations of the experiment.</li>
+<li align="justify">Management of questionnaire administration: integration with <a href="https://www.limesurvey.org/" target="_blank"><span color="blue">LimeSurvey</span></a> to manage the administration of electronic questionnaires used to collect data in experiments.</li>
+</ul>
+<p align="justify">More details about the newest functionalities are provided in the sequence.</p>
+<p align="justify"><em>Electrophysiology</em></p>
+<p align="justify">NES allows to register data from EEG, EMG and TMS experiments. For each experiment, it manages data and metadata from the experimental protocol until the data acquisition. NES is able to deal with electrophysiological data collected in several formats used by the neuroscience community. In NES, each data collected in a registered experiment is always associated with the subject from which it was collected and with a specific stage of the experimental protocol.</p>
+<p align="justify">The data can be raw data obtained from signal acquisition equipments (e.g., EEG and EMG) or other additional files related to the different types of stages that an experimental protocol can has (e.g., multimedia files for stimuli presentation, and spreadsheets with behavioral data). Furthermore, the information about the equipment and the configuration used in a data acquisition can be registered at NES. This information is fundamental to enable the sharing and reuse of the raw data. To the best of our knowledge, there is not another software tool available for public usage that provides similar functionalities to manage electrophysiological data from experiments.</p>
+<p align="justify"><em>Data exportation</em></p>
+<p align="justify">NES allows to export all data and metadata of the experiments which it stores. The exportation includes the data from the experiment subjects (e.g., questionnaire responses, clinical diagnoses, electrophysiological raw data) and metadata about the experimental protocol (e.g., description of the purpose of the experiment, description of the protocol steps, equipment configuration and notes made by scientists). Also, the export menu allows filtering by participant information as gender, diagnosis and age. Textual and numeric data are organized in standard plain-text format files (CSV, comma separated values), while the EEG raw data can be exported in the <a href="http://www.nwb.org/" target="_blank"><span color="blue">Neuroscience Without Border (NWB)</span></a> format, that is one of the most promising initiatives for standardization of data representation for electrophysiology.</p>
+<p align="justify"><em>Integration with the Goalkeeper game</em></p>
+<p align="justify">The <a href="../of-gaming-multidisciplinary-science-and-the-functioning-of-the-brain/index.html" target="_blank"><span color="blue">Goalkeeper Game</span></a> was created by the NeuroMat research team as part of the development of the statistical tools required by the new class of stochastic processes that this team works on. The scalable architecture of NES allows for straightforward extension to manage data from other novel types of neuroscience experimental protocols, such as the ones which use Goalkeeper game. The current version of NES allows an experimenter to associate a context tree configuration with a specific step of an experimental protocol. In addition, it allows to store data collected from an experiment's subject by means of the Goalkeeper game application.</p>
+<p align="justify">Groups of subjects (and their respective experimental protocols) can be registered for each experiment. To each subject, NES enables to attach data files in several formats. These files can contain, for example, data with the performance of the subject in a round of the Goolkeeper game, or can be additional files related with each phase of the game.</p>
+<p align="justify"><strong>The NeuroMat Open Database</strong></p>
+<p align="justify">The NeuroMat Open Database is an initiative of NeuroMat to provide an open-access platform for sharing and searching data and metadata from neuroscience experiments. The platform is constituted by a web portal and web service. The web portal is being designed to be a user-friendly interface for the neuroscience community to the NeuroMat open-access database. The web service is used to feed the open database with experimental data generated by the NeuroMat&rsquo;s researchers.</p>
+<p align="justify">Through NES, a researcher is be able to send the data and metadata of his/her experiments to the NeuroMat Open Database web service. The data is anonymized before being sent from NES to the Open Database; no sensitive data leaves NES or is stored in the Open Database. When a new dataset of an experiment arrives at the Open Database, it will be evaluated by a curatorial committee. The committee will analyze if the dataset is appropriate for publication on the NeuroMat Open Database. The researcher will be notified of the status of his/her data submission. After approval, the dataset will be made publicly available on the NeuroMat Open Database web portal. Figure 1 illustrates the process.</p>
+<p><img alt="" src="../../sites/default/files/newsletter43/nes.png"></p>
+<p align="justify"><strong>Related works</strong></p>
+<p align="justify">Most of the open-source software tools to neuroscience focus on two main groups: the storing and sharing of electrophysiological data and those that allow the management of the experimental protocol. Some of them that are in the first group provide interfaces to manipulate electrophysiological data objects, as data array, events, regions of interest, etc. or extensively annotate these specific data objects. The ones that are in the second group provide the management of the experimental protocol, accurate presentation of stimuli and mechanisms for collection of participant responses.</p>
+<p align="justify">Most software tools that are in the first group were designed to enable data exchange based on file. They provide a repository to store and share data and metadata from neuroscience researches. It makes neuroscience data publicly available so it can be widely used for research, teaching and learning purposes. Even though it is a good initiative to facilitate collaborative research between experimental neuroscientists, their process to contribute data is not trivial. The researcher have to fill a list of requirements to submit a request to contribute data. After approval, the data and metadata to be shared must to be in a specific format, e.g. the NWB format.</p>
+<p align="justify">Some of them can synchronize data with the its web based portal, e.g. <a href="https://eegdatabase.kiv.zcu.cz/" target="_blank"><span color="blue">EEGBase</span></a>. Through its portal researchers have the means for storage, management, search and sharing of data. The data and metadata are implemented according to a defined ontology and are registered using predefined html forms, however the metadata are registered in textual mode and its definition depends of the user.</p>
+<p align="justify">The software tools that allow management the experimental protocol, accurate presentation of stimuli and collection of participant responses provide an open-source software library that allows a very range of visual and auditory stimuli and a great variety of experimental designs to be generated within a framework based on Python, e.g. <a href="http://www.psychopy.org/" target="_blank"><span color="blue">Psychopy</span></a> and <a href="http://www.expyriment.org/" target="_blank"><span color="blue">Expyriment</span></a>. Others, as <a href="http://osdoc.cogsci.nl/" target="_blank"><span color="blue">OpenSesame</span></a>, provide a graphical and scripting interface to create wide range of experiments including psychophysical experiments, speeded response time task, eye-tracking studies, and questionnaires. In spite of provide a good graphical interface, some tasks need to be performed using Python scripting.</p>
+<p align="justify">The software packages described above are focused in a specific type of scenario and fail to describe various types of experimental protocols. For example, some are focused in cellular and intracellular, others like EEGBase is focused in EEG and event related potential (ERP). Despite they provide a specific data model to store data and metadata, these models are very extensible making its posterior query to track the provenance information related to the experiment more difficult. Oftentimes, this information is written in non understandable form, hindering its interpretation by other experimenters by which experiments cannot be later reproduced or verified. The software&rsquo;s packages that are part of the second group require technical knowledge to write scripts in python and perform the description of the design of experimental protocol and its later execution. Neuroscience labs need tools that assist the experimenter in the management of all steps of the neuroscience experiment, while being able to provide a widest range of experimental designs as possible to reduce the variety of software that an experimenter needs to learn to use.</p>
+<p align="justify"><strong>Uses of NES</strong></p>
+<p align="justify">To the best of our knowledge, there are not software tools, open-source, which provide facilities to record data and metadata involved in all steps of an electrophysiological experiment. NES has emerged as a way to help to make up this deficit and provide a friendly mechanism to register experimental data and its fundamental provenance information.</p>
+<p align="justify">NES's web interface and modular format provide an intuitive use of its data management functionalities. Its use does not depend on any specific knowledge on informatics. NES was developed using open technologies and tools which can be easily installed and used in any research laboratory. It is licensed under the Mozilla Public License version 2.0 and its source code and documentation are available at <a href="https://github.com/neuromat/nes" target="_blank"><span color="blue">github.com/neuromat/nes</span></a>.</p>
+<p align="justify">NES is being used at the Laboratory of Neuroscience and Rehabilitation (LNR) of the Institute of Neurology Deolindo Couto (INDC) of the Federal University of Rio de Janeiro (UFRJ), especially in the context of the <a href="http://abraco.numec.prp.usp.br/" target="_blank"><span color="blue">ABRA&Ccedil;O network</span></a>, and at the <a href="https://amparo.numec.prp.usp.br/" target="_blank"><span color="blue">AMPARO network</span></a>, a research center at the University of S&atilde;o Paulo that has as main objective to promote the improvement in the quality of life of people living with Parkinson's disease and their relatives.</p>
+<p align="justify"><strong>References</strong></p>
+<p>[1] Goble, C. Position statement: Musings on provenance, workflow and (semantic web) annotations for bioinformatics.Workshop on Data Derivation and Provenance, Chicago. Vol. 3. (2002) [2] Gibson, F. et al. Minimum information about a neuroscience investigation (MINI): electrophysiology.Nat. Precedings. (2008) [3] Frishkoff, G. et al. &ldquo;Minimal Information for Neural Electromagnetic Ontologies (MINEMO): A Standards-Compliant Method for Analysis and Integration of Event-Related Potentials (ERP) Data.&rdquo; Standards in Genomic Sciences 5.2 (2011) [4] Poldrack, R. et al. Guidelines for reporting an fMRI study.Neuroimage. 40.2, 409--414 (2008)</p>
+<p><em>This piece is part of NeuroMat's Newsletter #43. <a href="../../newsletter/43/index.html">Read more here</a></em></p>
+        
+    
+
+    
+    
+        
+        <a class="btn btn-sm share-twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A//neuromat.numec.prp.usp.br/content/nes-a-free-software-to-manage-data-from-neuroscience-experiments/&amp;text=NES%3A%20a%20free%20software%20to%20manage%20data%20from%20neuroscience%20experiments">Share on Twitter</a>
+        <a class="btn btn-sm share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://neuromat.numec.prp.usp.br/content/nes-a-free-software-to-manage-data-from-neuroscience-experiments/">Share on Facebook</a>
+        
+    
+
+
+                </div>
+                <div class="col-md-3 right">
+                    <div class="panel panel-default">
+                        
+    
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroCineMat</th>
+        </tr>
+        <tr>
+            <td>
+                Featuring this week:<br>
+                <div class="embed-responsive embed-responsive-4by3">
+
+<!--
+                  <iframe src="https://www.youtube-nocookie.com/embed/FgQIpJvBB4A" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+-->
+                  <iframe src="https://www.youtube.com/embed/playlist?list=PLXUXkbNfNLDaP7Xzt4dXGIYEoJfraPgWr&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Newsletter</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Stay informed on our latest news!</p>
+                <form enctype="multipart/form-data" method="post" action="https://neuromat.numec.prp.usp.br/newsletter/subscription/">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='vOdcusk9a8Mw6QNKetEmpKfesubtI1F3V0jUzOcmG2FJfIjZApnv5rKv42yEP8JV' />
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" name="email" placeholder="E-mail" required="" aria-describedby="basic-addon1">
+                    </div>
+                    <br>
+                    <button class="btn btn-success" id="id_submit" name="submit" value="Subscribe" type="submit">Subscribe</button>
+                </form>
+                <br>
+                <p><a href="../../newsletter/previous/index.html">Previous issues</a></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Follow Us on Facebook</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+<!-- 
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+-->
+                    <blockquote cite="https://www.facebook.com/neuromathematics/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/neuromathematics/">NeuroMat - Research Center for Neuromathematics</a>
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Podcast A Matemática do Cérebro</th>
+        </tr>
+        <tr>
+            <td>
+                <a title="Podcast a Matemática do Cérebro" href="https://podcast.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/podcast.png" class="img-responsive center-block" alt="Podcast A Matemática do Cérebro">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Brachial Plexus Injury Initiative</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://abraco.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/logoabraco.png" class="img-responsive center-block" alt="Logo of the NeuroMat Brachial Plexus Injury Initiative">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Neuroscience Experiments System</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/neuromat/nes/blob/master/README.md" target="_blank">
+                    <img src="../../static/img/banner_nes.png" class="img-responsive center-block" style="width: 100%;"  alt="Logo of the Neuroscience Experiments System">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Parkinson Network</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://amparo.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/amparo.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat Parkinson Network">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat's scientific-dissemination blog</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://difusaoneuromat.wordpress.com/" target="_blank">
+                    <img src="../../static/img/logo-blog.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat's scientific-dissemination blog">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                
+
+<div id="id_footer_section" class="container neuromat-footer">
+    <div class="col-md-6 footer-content-align">
+        <p class="fapesp-icon">Supported by</p>
+        <a href="http://www.fapesp.br/" target="_blank"><img src="../../static/img/fapesp.png" alt=""></a>
+    </div>
+    <div class="col-md-6 footer-content-align">
+        <p>Hosted by</p>
+        <a href="http://usp.br/" target="_blank"><img  src="../../static/img/usp.png" alt=""></a>
+    </div>
+    <div class="col-md-12">
+        <hr>
+    </div>
+
+    <section class="col-md-3">
+        <h4>Related Projects</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="http://abraco.numec.prp.usp.br/" target="_blank">ABRAÇO</a></li>
+            <li class="list-group-item"><a href="https://amparo.numec.prp.usp.br/" target="_blank">AMPARO</a></li>
+            <li class="list-group-item"><a href="http://game.numec.prp.usp.br/" target="_blank">Jogo do Goleiro</a></li>
+            <li class="list-group-item"><a href="https://web.archive.org/web/20220813210730/https://www.numec.prp.usp.br/" target="_blank">NUMEC</a></li>
+        </ul>
+    </section>
+    <section class="col-md-3">
+        <h4>Follow us</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="https://www.facebook.com/neuromathematics" target="_blank"> <span class="fab fa-facebook"></span>Facebook</a></li>
+            <li class="list-group-item"><a href="https://www.youtube.com/neuromathematics" target="_blank"> <span class="fab fa-youtube"> </span>Youtube</a></li>
+            <li class="list-group-item"><a href="https://github.com/neuromat/" target="_blank"> <span class="fab fa-github"> </span>Github</a></li>
+        </ul>
+    </section>
+    <section id="id_footer_contact" class="col-md-6">
+        <h4>Contact</h4>
+        <div id="id_footer_contact">
+            <p>
+                Address: <br>
+                Matao St., 1010 - Cidade Universitária - São Paulo - SP - Brasil. 05508-090.
+            </p>
+            <p>
+                Phone: <br>
+                +55 11 3091-1717
+            </p>
+            <p>
+                Email: <br>
+                neuromat@numec.prp.usp.br
+            </p>
+        </div>
+    </section>
+
+    <div id="id_footer_license" class="footer-license">
+        <p>
+            This site content is licensed under a Creative Commons Attributions 4.0
+        </p>
+    </div>
+</div>
+
+            </div>
+        </footer>
+
+        
+            
+
+
+
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46648216-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        
+
+    </body>
+
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/nes-a-free-software-to-manage-data-from-neuroscience-experiments/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:03:48 GMT -->
+</html>

@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+
+    
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/a-neuromat-project-group-to-simulate-cortical-networks-using-stochastic-models/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:05:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="During the last NeuroMat workshop, PI Antonio Carlos Roque presented a project on simulating neuronal behaviors associated to the Galves-Löcherbach model. Computational simulation could provide insights on brain dynamics, especially if the simulated models have very large sizes. Postdoctoral researcher Nilton Kamiji and PhD students Rodrigo Pena and César Ceballos are part of this project; Kamiji also presented on neuronal modeling at the NeuroMat workshop.">
+        <title>A NeuroMat project group to simulate cortical networks using stochastic models | NeuroMat</title>
+        <link rel="shortcut icon" href="../../static/img/favicon.ico">
+
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../feeds/rss/index.html">
+            <link rel="alternate" type="application/atom+xml" title="Atom" href="../feeds/atom/index.html">
+        
+
+        
+            <link rel="stylesheet" href="../../static/css/bootstrap.css">
+            <link rel="stylesheet" href="../../static/css/mezzanine.css">
+            <link rel="stylesheet" href="../../static/css/style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+            
+        
+
+        
+            <script src="../../static/mezzanine/js/jquery-1.8.3.min.js"></script>
+            <script src="../../static/js/bootstrap.js"></script>
+            <script src="../../static/js/bootstrap-extras.js"></script>
+            
+        
+
+        <!-- Simple javascript notifications -->
+        <link href="../../static/toastr/toastr.css" rel="stylesheet"/>
+        <script src="../../static/toastr/toastr.js"></script>
+        <script src="../../static/toastr/toastr_messages.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="/static/js/html5shiv.js"></script>
+        <script src="/static/js/respond.min.js"></script>
+        <![endif]-->
+
+        
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+    </head>
+
+    <body id="body">
+        
+
+        
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header col-sm-6 col-md-5">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="margin-right: -5px">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <a class="top-neuromat" href="../../index.html">NeuroMat</a>
+                <p class="top-small">Research, Innovation and Dissemination Center for <br>Neuromathematics</p>
+            
+        </div>
+        <div class="navbar-collapse collapse" style="margin-right:15px; margin-bottom:0;">
+            
+<form action="https://neuromat.numec.prp.usp.br/search/" class="navbar-form navbar-right" role="search">
+
+    <div class="form-group">
+        <input class="form-control" placeholder="Search" type="text" name="q" value="">
+        <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
+    </div>
+
+    
+
+</form>
+
+        </div>
+        <div class="navbar-collapse collapse idioma">
+        </div>
+        <nav class="navbar navbar-inverse navbar-collapse collapse">
+            
+<ul class="nav navbar-nav"><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            About NeuroMat
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="who-we-are"><a href="../../who-we-are/index.html">Who we are</a></li><li class="
+                               "
+                        id="the-neuromat-project"><a href="../../the-neuromat-project/index.html">The NeuroMat Project</a></li><li class="
+                               "
+                        id="team"><a href="../../team/index.html">Team</a></li><li class="
+                               "
+                        id="reports"><a href="../../reports/index.html">Reports</a></li><li class="
+                               "
+                        id="contact"><a href="../../contact/index.html">Contact</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Research
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="scientific-project"><a href="../../scientific-project/index.html">Scientific Project</a></li><li class="
+                               "
+                        id="-content-category-publications-"><a href="../category/publications/index.html">Publications</a></li><li class="
+                               "
+                        id="-content-category-lectures-"><a href="../category/lectures/index.html">Lectures</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Innovation
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="open-science"><a href="../../open-science/index.html">Open Science</a></li><li class="
+                               "
+                        id="neuromatdb"><a href="../../neuromatdb/index.html">NeuroMat Databases</a></li><li class="
+                               "
+                        id="goalkeeper-game"><a href="../../goalkeeper-game/index.html">The Goalkeeper Game</a></li><li class="
+                               "
+                        id="nes"><a href="../../nes/index.html">NES</a></li><li class="
+                               "
+                        id="nira"><a href="../../nira/index.html">NIRA</a></li><li class="
+                               "
+                        id="intellectual-property"><a href="../../intellectual-property/index.html">Intellectual Property</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Dissemination
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="-content-category-news-"><a href="../category/news/index.html">News</a></li><li class="
+                               "
+                        id="-content-category-streaming"><a href="../category/streaming/index.html">Videos</a></li><li class="
+                               "
+                        id="-content-category-radiocast-"><a href="../category/radiocast/index.html">Radio</a></li><li class="
+                               "
+                        id="-newsletter-previous"><a href="../../newsletter/previous/index.html">Newsletter</a></li></ul></li><li class="
+                               "
+                        id="-content-category-events-"><a href="../category/events/index.html"
+                            >
+                            Events
+                            
+                        </a></li><li class="
+                               "
+                        id="-content-category-opportunities-"><a href="../category/opportunities/index.html"
+                            >
+                            Opportunities
+                            
+                        </a></li></ul>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <img src="../../static/img/neuromat.png" class="img-responsive center-block" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 middle">
+                    
+
+    <h3>
+        A NeuroMat project group to simulate cortical networks using stochastic models
+    </h3>
+
+    
+    
+        
+            <h6 class="post-meta">
+                Dec 21, 2016
+            </h6>
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <p align="justify">During the <a href="../../nm2w/index.html" target="_blank"><span color="blue">last NeuroMat workshop</span></a>, PI Antonio Carlos Roque presented a project on simulating neuronal behaviors associated to the Galves-Löcherbach model. Computational simulation could provide insights on brain dynamics, especially if the simulated models have very large sizes. Postdoctoral researcher Nilton Kamiji and PhD students Rodrigo Pena and César Ceballos are part of this project; Kamiji also presented on neuronal modeling at the NeuroMat workshop.</p>
+<p align="justify">The goal of the project led by Roque is to simulate models of cortical networks using the stochastic model of Galves-Löcherbach. This goal goes in parallel and complements NeuroMat’s ongoing research project to develop the analytical, mathematical properties of the Galves-Löcherbach model; a recent contribution to this ongoing research project has been <a href="../phase-transitions-and-self-organized-criticality-in-networks-of-stochastic-spiking-neurons/index.html" target="_blank"><span color="blue">Brochini et al (2016)</span></a>. “Because of the system complexity and in order to achieve rigorous mathematical contributions,” said Roque, “it is impossible to include many realistic features in studies of mathematical properties of the model . . . Simulations are of uttermost relevance to test the model in more realistic settings, investigating what kinds of behaviors are generated in a network with stochastic neuron models.” According to him, simulations may be seen as a “test of sufficient realism” of the Galves-Löcherbach model; simulation results will be compared to observed neuronal dynamics.</p>
+<p align="justify">Initially, Roque’s team expects to build large-size simulations of models of neuronal stochastic networks to identify patterns of activity in these simulated networks, comparing them with what one would find in humans and animals in states of spontaneous and evoked activity. The networks that are expected to be built for simulations would involve a minimum of a hundred thousand neurons, incorporating structural, hierarchical elements of brain organization. A hypothesis is that it will be possible to identify synchronous patterns of activity in the network, as if there were neuronal assemblies. This could shed light on how brain learning and processing occurs.</p>
+<p align="justify">In order to rely on the Galves-Löcherbach model for simulations Roque and his team had to specify a process for determining spiking probability. This specific determination is not necessary for analytical developments of the Galves-Löcherbach model, to the extent that is sufficient to bring onto the model general features; in the case of simulations, a specific spiking probability is necessary to assess neuronal behavioral dynamics.</p>
+<p align="justify">In the long run, simulation may also be a field for testing hypotheses on the "statistician brain," the NeuroMat conjecture on how the brain retrieves statistical regularities from stimuli. This conjecture was the object of several <a href="../nm2w-slides/index.html" target="_blank"><span color="blue">presentations</span></a> at the workshop in November, especially on the 24th. Simulations might provide a clue on the neural mechanism that is associated to experimental evidences that have been found on this conjecture, particularly <a href="../retrieving-a-context-tree-from-eeg-data/index.html" target="_blank"><span color="blue">Duarte et al (2016)</span></a>. The question that the team led by Roque expects to engage with in the long run concerning the “statistician brain” is complementary to providing evidences to support the “statistician brain” conjecture: “given that the brain retrieves statistical regularities from stimuli as the NeuroMat research team has identified, what are the neuronal network mechanisms that make it happen?” An immediate concern for this kind of simulation is how big the network should be; a hypothesis on this matter is that the mechanisms would be related to the interaction between low-level cortical processing, that is, processing that occurs in the initial cortical areas that receive sensory stimuli from the periphery, and high-level cortical processing, that is, processing that occurs in upstream cortical areas that do not receive sensory input from the periphery.</p>
+<p align="justify"><em>"Simulations of cortical network models made of stochastic spiking neurons" by Antonio Carlos Roque</em></p>
+<ul>
+<li><a href="../../static/media/uploads/nm2w/slides/simulations_of_cortical_network_models_made_of_stochastic_spiking_neurons.pdf" target="_blank"><span color="blue">Slides</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=qXGriC_ewbc" target="_blank"><span color="blue">Video, min 0:00:00</span></a></li>
+</ul>
+<p align="justify"><em>"The Potjans-Diesmann local microcircuit model using different neuron classes for excitatory and inhibitory neurons" by Nilton Kamiji</em></p>
+<ul>
+<li><a href="../../static/media/uploads/nm2w/slides/the_potjans_diesmann_local_microcircuit_model_using_different_neuron_classes_for_excitatory_and_inhibitory_neurons.pdf" target="_blank"><span color="blue">Slides</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=qXGriC_ewbc" target="_blank"><span color="blue">Video, min 0:54:20</span></a></li>
+</ul>
+<p><em>This piece is part of NeuroMat's Newsletter #35. <a href="../../newsletter/35/index.html">Read more here</a></em></p>
+        
+    
+
+    
+    
+        
+        <a class="btn btn-sm share-twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A//neuromat.numec.prp.usp.br/content/a-neuromat-project-group-to-simulate-cortical-networks-using-stochastic-models/&amp;text=A%20NeuroMat%20project%20group%20to%20simulate%20cortical%20networks%20using%20stochastic%20models">Share on Twitter</a>
+        <a class="btn btn-sm share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://neuromat.numec.prp.usp.br/content/a-neuromat-project-group-to-simulate-cortical-networks-using-stochastic-models/">Share on Facebook</a>
+        
+    
+
+
+                </div>
+                <div class="col-md-3 right">
+                    <div class="panel panel-default">
+                        
+    
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroCineMat</th>
+        </tr>
+        <tr>
+            <td>
+                Featuring this week:<br>
+                <div class="embed-responsive embed-responsive-4by3">
+
+<!--
+                  <iframe src="https://www.youtube-nocookie.com/embed/FgQIpJvBB4A" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+-->
+                  <iframe src="https://www.youtube.com/embed/playlist?list=PLXUXkbNfNLDaP7Xzt4dXGIYEoJfraPgWr&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Newsletter</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Stay informed on our latest news!</p>
+                <form enctype="multipart/form-data" method="post" action="https://neuromat.numec.prp.usp.br/newsletter/subscription/">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='RTJnNsXu67KUs3KbMwrIXeU1ZyBeUYJ3h5P5SOPHC1D7BVgq8saRDVpiB6Yp15NV' />
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" name="email" placeholder="E-mail" required="" aria-describedby="basic-addon1">
+                    </div>
+                    <br>
+                    <button class="btn btn-success" id="id_submit" name="submit" value="Subscribe" type="submit">Subscribe</button>
+                </form>
+                <br>
+                <p><a href="../../newsletter/previous/index.html">Previous issues</a></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Follow Us on Facebook</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+<!-- 
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+-->
+                    <blockquote cite="https://www.facebook.com/neuromathematics/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/neuromathematics/">NeuroMat - Research Center for Neuromathematics</a>
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Podcast A Matemática do Cérebro</th>
+        </tr>
+        <tr>
+            <td>
+                <a title="Podcast a Matemática do Cérebro" href="https://podcast.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/podcast.png" class="img-responsive center-block" alt="Podcast A Matemática do Cérebro">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Brachial Plexus Injury Initiative</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://abraco.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/logoabraco.png" class="img-responsive center-block" alt="Logo of the NeuroMat Brachial Plexus Injury Initiative">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Neuroscience Experiments System</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/neuromat/nes/blob/master/README.md" target="_blank">
+                    <img src="../../static/img/banner_nes.png" class="img-responsive center-block" style="width: 100%;"  alt="Logo of the Neuroscience Experiments System">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Parkinson Network</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://amparo.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/amparo.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat Parkinson Network">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat's scientific-dissemination blog</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://difusaoneuromat.wordpress.com/" target="_blank">
+                    <img src="../../static/img/logo-blog.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat's scientific-dissemination blog">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                
+
+<div id="id_footer_section" class="container neuromat-footer">
+    <div class="col-md-6 footer-content-align">
+        <p class="fapesp-icon">Supported by</p>
+        <a href="http://www.fapesp.br/" target="_blank"><img src="../../static/img/fapesp.png" alt=""></a>
+    </div>
+    <div class="col-md-6 footer-content-align">
+        <p>Hosted by</p>
+        <a href="http://usp.br/" target="_blank"><img  src="../../static/img/usp.png" alt=""></a>
+    </div>
+    <div class="col-md-12">
+        <hr>
+    </div>
+
+    <section class="col-md-3">
+        <h4>Related Projects</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="http://abraco.numec.prp.usp.br/" target="_blank">ABRAÇO</a></li>
+            <li class="list-group-item"><a href="https://amparo.numec.prp.usp.br/" target="_blank">AMPARO</a></li>
+            <li class="list-group-item"><a href="http://game.numec.prp.usp.br/" target="_blank">Jogo do Goleiro</a></li>
+            <li class="list-group-item"><a href="https://web.archive.org/web/20220813210730/https://www.numec.prp.usp.br/" target="_blank">NUMEC</a></li>
+        </ul>
+    </section>
+    <section class="col-md-3">
+        <h4>Follow us</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="https://www.facebook.com/neuromathematics" target="_blank"> <span class="fab fa-facebook"></span>Facebook</a></li>
+            <li class="list-group-item"><a href="https://www.youtube.com/neuromathematics" target="_blank"> <span class="fab fa-youtube"> </span>Youtube</a></li>
+            <li class="list-group-item"><a href="https://github.com/neuromat/" target="_blank"> <span class="fab fa-github"> </span>Github</a></li>
+        </ul>
+    </section>
+    <section id="id_footer_contact" class="col-md-6">
+        <h4>Contact</h4>
+        <div id="id_footer_contact">
+            <p>
+                Address: <br>
+                Matao St., 1010 - Cidade Universitária - São Paulo - SP - Brasil. 05508-090.
+            </p>
+            <p>
+                Phone: <br>
+                +55 11 3091-1717
+            </p>
+            <p>
+                Email: <br>
+                neuromat@numec.prp.usp.br
+            </p>
+        </div>
+    </section>
+
+    <div id="id_footer_license" class="footer-license">
+        <p>
+            This site content is licensed under a Creative Commons Attributions 4.0
+        </p>
+    </div>
+</div>
+
+            </div>
+        </footer>
+
+        
+            
+
+
+
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46648216-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        
+
+    </body>
+
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/a-neuromat-project-group-to-simulate-cortical-networks-using-stochastic-models/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:05:12 GMT -->
+</html>

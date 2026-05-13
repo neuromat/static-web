@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+
+    
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/random-graphs-in-the-brain-devising-a-renewed-line-of-research/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:07:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="To make sense of neural connectivity is among the key challenges in neuroscience. This remains fundamentally a neuromathematical challenge, to the extent that the mathematical theory to understand patterns of connectivity is still to be made, but also also a communicational challenge, since it requires the bridging of relevant but still unconnected fields, such as experimental neurophysiology, neuroanatomy, functional imaging, probability, statistics and computer science. These two challenges are the core of the scientific project of FAPESP’s Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat), which held from November 23 to 27 the workshop “Random Graphs in the Brain,” at the University of São Paulo, Brazil.">
+        <title>Random graphs in the brain: devising a renewed line of research | NeuroMat</title>
+        <link rel="shortcut icon" href="../../static/img/favicon.ico">
+
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../feeds/rss/index.html">
+            <link rel="alternate" type="application/atom+xml" title="Atom" href="../feeds/atom/index.html">
+        
+
+        
+            <link rel="stylesheet" href="../../static/css/bootstrap.css">
+            <link rel="stylesheet" href="../../static/css/mezzanine.css">
+            <link rel="stylesheet" href="../../static/css/style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+            
+        
+
+        
+            <script src="../../static/mezzanine/js/jquery-1.8.3.min.js"></script>
+            <script src="../../static/js/bootstrap.js"></script>
+            <script src="../../static/js/bootstrap-extras.js"></script>
+            
+        
+
+        <!-- Simple javascript notifications -->
+        <link href="../../static/toastr/toastr.css" rel="stylesheet"/>
+        <script src="../../static/toastr/toastr.js"></script>
+        <script src="../../static/toastr/toastr_messages.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="/static/js/html5shiv.js"></script>
+        <script src="/static/js/respond.min.js"></script>
+        <![endif]-->
+
+        
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+    </head>
+
+    <body id="body">
+        
+
+        
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header col-sm-6 col-md-5">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="margin-right: -5px">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <a class="top-neuromat" href="../../index.html">NeuroMat</a>
+                <p class="top-small">Research, Innovation and Dissemination Center for <br>Neuromathematics</p>
+            
+        </div>
+        <div class="navbar-collapse collapse" style="margin-right:15px; margin-bottom:0;">
+            
+<form action="https://neuromat.numec.prp.usp.br/search/" class="navbar-form navbar-right" role="search">
+
+    <div class="form-group">
+        <input class="form-control" placeholder="Search" type="text" name="q" value="">
+        <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
+    </div>
+
+    
+
+</form>
+
+        </div>
+        <div class="navbar-collapse collapse idioma">
+        </div>
+        <nav class="navbar navbar-inverse navbar-collapse collapse">
+            
+<ul class="nav navbar-nav"><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            About NeuroMat
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="who-we-are"><a href="../../who-we-are/index.html">Who we are</a></li><li class="
+                               "
+                        id="the-neuromat-project"><a href="../../the-neuromat-project/index.html">The NeuroMat Project</a></li><li class="
+                               "
+                        id="team"><a href="../../team/index.html">Team</a></li><li class="
+                               "
+                        id="reports"><a href="../../reports/index.html">Reports</a></li><li class="
+                               "
+                        id="contact"><a href="../../contact/index.html">Contact</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Research
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="scientific-project"><a href="../../scientific-project/index.html">Scientific Project</a></li><li class="
+                               "
+                        id="-content-category-publications-"><a href="../category/publications/index.html">Publications</a></li><li class="
+                               "
+                        id="-content-category-lectures-"><a href="../category/lectures/index.html">Lectures</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Innovation
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="open-science"><a href="../../open-science/index.html">Open Science</a></li><li class="
+                               "
+                        id="neuromatdb"><a href="../../neuromatdb/index.html">NeuroMat Databases</a></li><li class="
+                               "
+                        id="goalkeeper-game"><a href="../../goalkeeper-game/index.html">The Goalkeeper Game</a></li><li class="
+                               "
+                        id="nes"><a href="../../nes/index.html">NES</a></li><li class="
+                               "
+                        id="nira"><a href="../../nira/index.html">NIRA</a></li><li class="
+                               "
+                        id="intellectual-property"><a href="../../intellectual-property/index.html">Intellectual Property</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Dissemination
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="-content-category-news-"><a href="../category/news/index.html">News</a></li><li class="
+                               "
+                        id="-content-category-streaming"><a href="../category/streaming/index.html">Videos</a></li><li class="
+                               "
+                        id="-content-category-radiocast-"><a href="../category/radiocast/index.html">Radio</a></li><li class="
+                               "
+                        id="-newsletter-previous"><a href="../../newsletter/previous/index.html">Newsletter</a></li></ul></li><li class="
+                               "
+                        id="-content-category-events-"><a href="../category/events/index.html"
+                            >
+                            Events
+                            
+                        </a></li><li class="
+                               "
+                        id="-content-category-opportunities-"><a href="../category/opportunities/index.html"
+                            >
+                            Opportunities
+                            
+                        </a></li></ul>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <img src="../../static/img/neuromat.png" class="img-responsive center-block" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 middle">
+                    
+
+    <h3>
+        Random graphs in the brain: devising a renewed line of research
+    </h3>
+
+    
+    
+        
+            <h6 class="post-meta">
+                Nov 30, 2015
+            </h6>
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <p align="justify">To make sense of neural connectivity is among the key challenges in neuroscience. This remains fundamentally a neuromathematical challenge, to the extent that the mathematical theory to understand patterns of connectivity is still to be made, but also also a communicational challenge, since it requires the bridging of relevant but still unconnected fields, such as experimental neurophysiology, neuroanatomy, functional imaging, probability, statistics and computer science. These two challenges are the core of the scientific project of FAPESP’s Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat), which held from November 23 to 27 the workshop “Random Graphs in the Brain,” at the University of São Paulo, Brazil.</p>
+<table align="left"><caption align="bottom"><span size="1">On the blackboard, mathematician Remco van der Hofstad, one <br/>of the organizers of the workshop "Random Graphs in the Brain," in November, 2015, at NeuroMat/University of São Paulo.</span></caption>
+<tbody>
+<tr>
+<td><img alt="" src="../../static/media/uploads/newsletter22/remco_rgbrain.jpg" style="float: left; margin-right: 10px; margin-bottom: 5px; margin-left: 10px;"/></td>
+</tr>
+</tbody>
+</table>
+<p align="justify">Mathematical challenges include the devising of models that could give a realistic sense of how neurons interact, taking into consideration neuronal and functional dimensions of the brain, hierarchical properties of connectivity and system criticality. An organizer of the workshop along with Antonio Galves (University of São Paulo), Christophe Pouzat (Paris-Descartes University) and Claudia Vargas (Federal University of Rio de Janeiro), Remco van der Hofstad (Eindhoven University of Technology) gave a series of three lectures on complex networks and the brain and emphasized that a key open question in random graph theory and the brain is: "What is a good network model for brain functionality?” What is at stake, according to Hofstad, is the model one should put in place on how vertices should be associated in order to describe neuronal pairing so that fundamental features of neural activity are not disregarded, especially functional dimensions. His presentation slides are available <a href="../../static/media/uploads/rgbrain/remco_small_worlds_random_graphs.pdf" target="_blank">here</a>.</p>
+<p align="justify">Most models that are currently being used depend on deterministic methods, yet probabilistic models might lead to more efficient accounts. This has been a core assumption of the work done within NeuroMat, especially the founding paper by Galves and Löcherbach, in 2013, <a href="../infinite-systems-of-interacting-chains-with-memory-of-variable-lengtha-stochastic-model-for-biological-neural-nets/index.html" target="_blank">here</a>. In this paper, the authors rely on a critical directed Erdös-Rényi-type random graph, and the discussion of whether or not this graph is appropriate to make sense of neural connectivity has informed working sections during the workshop. In an interview to NeuroMat’s newsletter, <a href="../collaboration-among-mathematicians-and-neuroscientists-is-a-necessity-to-move-brain-theory-forward-an-interview-with-remco-van-der-hofstad/index.html" target="_blank">here</a>, Hofstad claimed that the Erdös-Rényi model was too “egalitarian" to be a fair depiction of what happens in the brain.</p>
+<p align="justify">An work path that was discussed within the workshop at NeuroMat is the development of graph theory within the mathematical framework introduced by Galves and Löcherbach. According to mathematician Christophe Pouzat, in reference to his introduction to the event, "Progress in understanding the brain is slowed down by a deficit of clear understanding of how the results of the different disciplines involved are obtained. On the one hand, a mathematician has almost no idea of how recordings from synaptically connected neurons in brain slices are performed and has therefore no intuition for the kind of artifacts they generate and for the precision of the measurements they provide. On the other hand, an experimentalist often fails to grasp that the definiteness on which mathematician are so insistent is the very condition needed to start mathematical work, which is by proving theorems.”</p>
+<p align="justify">The workshop brought together scientists from 20 universities, who are attempting to cross the language and discipline crossover. During the event, eminent neurobiologist Almut Schüz gave four lectures to introduce neuroanatomy, pinpointing quantitative dimensions in the understanding of the cortex. Her presentation slides are available <a href="../rgbrain-slides/index.html" target="_blank">here</a>.</p>
+<p align="justify">The workshop was streamed online, with over different 200 watchers, and videos should be released soon. The link to the event call and material is <a href="../../rgbrain/index.html" target="_blank">here</a>.</p>
+<p><em>This piece is part of NeuroMat's Newsletter #22. <a href="../../newsletter/22/index.html"><span color="blue">Read more here</span></a></em></p>
+        
+    
+
+    
+    
+        
+        <a class="btn btn-sm share-twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A//neuromat.numec.prp.usp.br/content/random-graphs-in-the-brain-devising-a-renewed-line-of-research/&amp;text=Random%20graphs%20in%20the%20brain%3A%20devising%20a%20renewed%20line%20of%20research">Share on Twitter</a>
+        <a class="btn btn-sm share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://neuromat.numec.prp.usp.br/content/random-graphs-in-the-brain-devising-a-renewed-line-of-research/">Share on Facebook</a>
+        
+    
+
+
+                </div>
+                <div class="col-md-3 right">
+                    <div class="panel panel-default">
+                        
+    
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroCineMat</th>
+        </tr>
+        <tr>
+            <td>
+                Featuring this week:<br>
+                <div class="embed-responsive embed-responsive-4by3">
+
+<!--
+                  <iframe src="https://www.youtube-nocookie.com/embed/FgQIpJvBB4A" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+-->
+                  <iframe src="https://www.youtube.com/embed/playlist?list=PLXUXkbNfNLDaP7Xzt4dXGIYEoJfraPgWr&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Newsletter</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Stay informed on our latest news!</p>
+                <form enctype="multipart/form-data" method="post" action="https://neuromat.numec.prp.usp.br/newsletter/subscription/">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='eWvm37Dmk4Ev64DLGI5mjYp76pH53V2LE8B48tvzQYxIfW902EOvZFUoIX4ga26D' />
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" name="email" placeholder="E-mail" required="" aria-describedby="basic-addon1">
+                    </div>
+                    <br>
+                    <button class="btn btn-success" id="id_submit" name="submit" value="Subscribe" type="submit">Subscribe</button>
+                </form>
+                <br>
+                <p><a href="../../newsletter/previous/index.html">Previous issues</a></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Follow Us on Facebook</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+<!-- 
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+-->
+                    <blockquote cite="https://www.facebook.com/neuromathematics/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/neuromathematics/">NeuroMat - Research Center for Neuromathematics</a>
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Podcast A Matemática do Cérebro</th>
+        </tr>
+        <tr>
+            <td>
+                <a title="Podcast a Matemática do Cérebro" href="https://podcast.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/podcast.png" class="img-responsive center-block" alt="Podcast A Matemática do Cérebro">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Brachial Plexus Injury Initiative</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://abraco.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/logoabraco.png" class="img-responsive center-block" alt="Logo of the NeuroMat Brachial Plexus Injury Initiative">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Neuroscience Experiments System</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/neuromat/nes/blob/master/README.md" target="_blank">
+                    <img src="../../static/img/banner_nes.png" class="img-responsive center-block" style="width: 100%;"  alt="Logo of the Neuroscience Experiments System">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Parkinson Network</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://amparo.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/amparo.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat Parkinson Network">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat's scientific-dissemination blog</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://difusaoneuromat.wordpress.com/" target="_blank">
+                    <img src="../../static/img/logo-blog.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat's scientific-dissemination blog">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                
+
+<div id="id_footer_section" class="container neuromat-footer">
+    <div class="col-md-6 footer-content-align">
+        <p class="fapesp-icon">Supported by</p>
+        <a href="http://www.fapesp.br/" target="_blank"><img src="../../static/img/fapesp.png" alt=""></a>
+    </div>
+    <div class="col-md-6 footer-content-align">
+        <p>Hosted by</p>
+        <a href="http://usp.br/" target="_blank"><img  src="../../static/img/usp.png" alt=""></a>
+    </div>
+    <div class="col-md-12">
+        <hr>
+    </div>
+
+    <section class="col-md-3">
+        <h4>Related Projects</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="http://abraco.numec.prp.usp.br/" target="_blank">ABRAÇO</a></li>
+            <li class="list-group-item"><a href="https://amparo.numec.prp.usp.br/" target="_blank">AMPARO</a></li>
+            <li class="list-group-item"><a href="http://game.numec.prp.usp.br/" target="_blank">Jogo do Goleiro</a></li>
+            <li class="list-group-item"><a href="https://web.archive.org/web/20220813210730/https://www.numec.prp.usp.br/" target="_blank">NUMEC</a></li>
+        </ul>
+    </section>
+    <section class="col-md-3">
+        <h4>Follow us</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="https://www.facebook.com/neuromathematics" target="_blank"> <span class="fab fa-facebook"></span>Facebook</a></li>
+            <li class="list-group-item"><a href="https://www.youtube.com/neuromathematics" target="_blank"> <span class="fab fa-youtube"> </span>Youtube</a></li>
+            <li class="list-group-item"><a href="https://github.com/neuromat/" target="_blank"> <span class="fab fa-github"> </span>Github</a></li>
+        </ul>
+    </section>
+    <section id="id_footer_contact" class="col-md-6">
+        <h4>Contact</h4>
+        <div id="id_footer_contact">
+            <p>
+                Address: <br>
+                Matao St., 1010 - Cidade Universitária - São Paulo - SP - Brasil. 05508-090.
+            </p>
+            <p>
+                Phone: <br>
+                +55 11 3091-1717
+            </p>
+            <p>
+                Email: <br>
+                neuromat@numec.prp.usp.br
+            </p>
+        </div>
+    </section>
+
+    <div id="id_footer_license" class="footer-license">
+        <p>
+            This site content is licensed under a Creative Commons Attributions 4.0
+        </p>
+    </div>
+</div>
+
+            </div>
+        </footer>
+
+        
+            
+
+
+
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46648216-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        
+
+    </body>
+
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/random-graphs-in-the-brain-devising-a-renewed-line-of-research/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:07:30 GMT -->
+</html>

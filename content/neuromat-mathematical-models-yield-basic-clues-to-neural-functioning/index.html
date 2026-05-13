@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+
+    
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/neuromat-mathematical-models-yield-basic-clues-to-neural-functioning/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:08:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="Mathematicians from the Research, Innovation and Dissemination Center for Neuromathematics (NeuroMat) are currently working on a new class of mathematical models that could eventually lead to a general theory of the brain, a theory that could be able to explain how the neural system, consisting of billions of neurons and other cells, interacts with an ever-changing environment and generates behaviors. NeuroMat is a state-of-the-art institute, that is coordinated by Prof. Antonio Galves and that was established in 2013 at the University of São Paulo (USP), with funding from the São Paulo Research Foundation (FAPESP). Twenty senior mathematicians from universities in seven countries are currently involved in this research project.">
+        <title>NeuroMat mathematical models yield basic clues to neural functioning | NeuroMat</title>
+        <link rel="shortcut icon" href="../../static/img/favicon.ico">
+
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../feeds/rss/index.html">
+            <link rel="alternate" type="application/atom+xml" title="Atom" href="../feeds/atom/index.html">
+        
+
+        
+            <link rel="stylesheet" href="../../static/css/bootstrap.css">
+            <link rel="stylesheet" href="../../static/css/mezzanine.css">
+            <link rel="stylesheet" href="../../static/css/style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+            
+        
+
+        
+            <script src="../../static/mezzanine/js/jquery-1.8.3.min.js"></script>
+            <script src="../../static/js/bootstrap.js"></script>
+            <script src="../../static/js/bootstrap-extras.js"></script>
+            
+        
+
+        <!-- Simple javascript notifications -->
+        <link href="../../static/toastr/toastr.css" rel="stylesheet"/>
+        <script src="../../static/toastr/toastr.js"></script>
+        <script src="../../static/toastr/toastr_messages.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="/static/js/html5shiv.js"></script>
+        <script src="/static/js/respond.min.js"></script>
+        <![endif]-->
+
+        
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+    </head>
+
+    <body id="body">
+        
+
+        
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header col-sm-6 col-md-5">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="margin-right: -5px">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <a class="top-neuromat" href="../../index.html">NeuroMat</a>
+                <p class="top-small">Research, Innovation and Dissemination Center for <br>Neuromathematics</p>
+            
+        </div>
+        <div class="navbar-collapse collapse" style="margin-right:15px; margin-bottom:0;">
+            
+<form action="https://neuromat.numec.prp.usp.br/search/" class="navbar-form navbar-right" role="search">
+
+    <div class="form-group">
+        <input class="form-control" placeholder="Search" type="text" name="q" value="">
+        <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
+    </div>
+
+    
+
+</form>
+
+        </div>
+        <div class="navbar-collapse collapse idioma">
+        </div>
+        <nav class="navbar navbar-inverse navbar-collapse collapse">
+            
+<ul class="nav navbar-nav"><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            About NeuroMat
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="who-we-are"><a href="../../who-we-are/index.html">Who we are</a></li><li class="
+                               "
+                        id="the-neuromat-project"><a href="../../the-neuromat-project/index.html">The NeuroMat Project</a></li><li class="
+                               "
+                        id="team"><a href="../../team/index.html">Team</a></li><li class="
+                               "
+                        id="reports"><a href="../../reports/index.html">Reports</a></li><li class="
+                               "
+                        id="contact"><a href="../../contact/index.html">Contact</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Research
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="scientific-project"><a href="../../scientific-project/index.html">Scientific Project</a></li><li class="
+                               "
+                        id="-content-category-publications-"><a href="../category/publications/index.html">Publications</a></li><li class="
+                               "
+                        id="-content-category-lectures-"><a href="../category/lectures/index.html">Lectures</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Innovation
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="open-science"><a href="../../open-science/index.html">Open Science</a></li><li class="
+                               "
+                        id="neuromatdb"><a href="../../neuromatdb/index.html">NeuroMat Databases</a></li><li class="
+                               "
+                        id="goalkeeper-game"><a href="../../goalkeeper-game/index.html">The Goalkeeper Game</a></li><li class="
+                               "
+                        id="nes"><a href="../../nes/index.html">NES</a></li><li class="
+                               "
+                        id="nira"><a href="../../nira/index.html">NIRA</a></li><li class="
+                               "
+                        id="intellectual-property"><a href="../../intellectual-property/index.html">Intellectual Property</a></li></ul></li><li class="dropdown
+                               "
+                        id="#"><a href="../../index.html"
+                            
+                                class="dropdown-toggle disabled" data-toggle="dropdown"
+                            >
+                            Dissemination
+                            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+                               "
+                        id="-content-category-news-"><a href="../category/news/index.html">News</a></li><li class="
+                               "
+                        id="-content-category-streaming"><a href="../category/streaming/index.html">Videos</a></li><li class="
+                               "
+                        id="-content-category-radiocast-"><a href="../category/radiocast/index.html">Radio</a></li><li class="
+                               "
+                        id="-newsletter-previous"><a href="../../newsletter/previous/index.html">Newsletter</a></li></ul></li><li class="
+                               "
+                        id="-content-category-events-"><a href="../category/events/index.html"
+                            >
+                            Events
+                            
+                        </a></li><li class="
+                               "
+                        id="-content-category-opportunities-"><a href="../category/opportunities/index.html"
+                            >
+                            Opportunities
+                            
+                        </a></li></ul>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <img src="../../static/img/neuromat.png" class="img-responsive center-block" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 middle">
+                    
+
+    <h3>
+        NeuroMat mathematical models yield basic clues to neural functioning
+    </h3>
+
+    
+    
+        
+            <h6 class="post-meta">
+                Mar 28, 2014
+            </h6>
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <p align="justify">Mathematicians from the Research, Innovation and Dissemination Center for Neuromathematics (NeuroMat) are currently working on a new class of mathematical models that could eventually lead to a general theory of the brain, a theory that could be able to explain how the neural system, consisting of billions of neurons and other cells, interacts with an ever-changing environment and generates behaviors. NeuroMat is a state-of-the-art institute, that is coordinated by Prof. Antonio Galves and that was established in 2013 at the University of São Paulo (USP), with funding from the São Paulo Research Foundation (FAPESP). Twenty senior mathematicians from universities in seven countries are currently involved in this research project.</p>
+<table align="left" class="os-jogadores-de-dado400x317.jpg"><caption align="bottom"><span size="1"><em>Dice players. Roman fresco from the Osteria della Via di Mercurio in Pompeii. <br/>Author: Wolfgang Rieger / Wikipedia.</em></span></caption>
+<tbody>
+<tr>
+<td><img alt="" src="../../static/media/uploads/newsletter2/os-jogadores-de-dado400x317.jpg" style="float: left; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;"/></td>
+</tr>
+</tbody>
+</table>
+<p align="justify">A key question of the research project is how to describe the spiking activity of a system of interacting neurons. The class of models that is being developed considers the whole neural history and selects from this comprehensive memory significant events that may influence the system in the future. The new class of models takes into consideration significant events within the specific history of the neuron whose activity is being predicted and within the encompassing neural network.</p>
+<p align="justify">“From a mathematical perspective, the building of a theory of the brain would mean to have a mathematical theory that explains the emergence of macroscopic phenomena (behavior) from the interaction between inhomogeneous microscopic components (neurons and other cells) under dynamically changing and interacting constraints,” said Dr. Daniel Y. Takahashi, a researcher at Princeton University and a NeuroMat associate investigator. “Such mathematical theory doesn't exist yet and it is expected that NeuroMat will have an important role for the development of this new mathematics.”</p>
+<p align="justify">Innovative elements of the class of models that is being developed at the FAPESP Research Center are at least twofold. Firstly, the research framework rests upon the idea of a long memory, basically the whole set of events that occurred before what has been observed. “Traditionally, mathematicians rely on Markovian-like processes: the current state of the process determines the future, and what has happened before is completely left out,” said Prof. Eva Löcherbach, from the University of Cergy-Pontoise (France) and a NeuroMat associate investigator. “What we are doing is original, because we are taking into consideration the whole history with a set of infinitely many components.”</p>
+<p align="justify">Secondly, the research framework advances a probabilistic modeling of neural activity that relies on spike trains and interactions among neurons. This suggests that from the whole neural history that is being considered one must specify models that fit economically the data, thus depending exclusively on elements from the whole history that matter. “This new approach extends at the same time the idea of Markov interacting particle systems and of chains with memory of variable length,” said Prof. Galves, NeuroMatʼs leading researcher and a professor at USPʼs Institute of Mathematics and Statistics. Frank Spitzer presented a new class of mathematical model for the evolution of large interacting systems in 1970. Jorma Rissanen introduced the idea of variable-length chains in the early 1980s as a data-compression system, insightfully suggesting that only a finite suffix of the past was necessary to predict efficiently some future event. NeuroMat's scientific challenge is to provide a context for each neuronal spike, that is, the necessary elements of past history given the whole history of neuronal functioning that one needs to predict the future. The current innovative model –an expansion of Spitzer and Rissanen– is as such: each chain of variable length describes the spiking activity of a single neuron, and the dependency from the past posits that every time a neuron has an activity potential it forgets the past, so that its neural potential is reset, and the probability of a new neuronal spike depends on changes in its interaction neighborhood.</p>
+<table align="right" class="researchers-guilherme-and-aline400x267.jpg"><caption align="bottom"><span size="1"><em>NeuroMat researchers Guilherme Ost and Aline Duarte de Oliveira. <br/>Source: Marcos Santos / USP Images.</em></span></caption>
+<tbody>
+<tr>
+<td><img alt="" src="../../static/media/uploads/newsletter2/researchers-guilherme-and-aline400x267.jpg" style="float: right; margin-left: 10px; margin-bottom: 15px; margin-top: 10px;"/></td>
+</tr>
+</tbody>
+</table>
+<p align="justify">“NeuroMat is not working in applied mathematics; the mathematics that are needed to address the challenge presented by neuroscience are still to be made,” said Prof. Galves. According to him, a key next step in the research project is to model neural activity as inherently non-stationary in time and non-homogeneous in space, changing in response to external influences produced by a random source and to internal stimuli from a procedure which is reminiscent of statistical model selection. “This could lead us to describe and model brain plasticity.”</p>
+<p align="justify">NeuroMatʼs innovative agenda of looking at neural functioning as statistical model selection has already led to two publications. Prof. Löcherbach and Prof. Galves have co-authored “Infinite systems of interacting chains with memory of variable length –a stochastic model for biological neural nets,” published in March 2013 at the <em>Journal of Statistical Physics</em>, in which they present how the new class of models that they bring forward improves the description of the time evolution of neural systems. In January 2014, Prof. Galves, Prof. Löcherbach, Prof. Anna De Masi (University of LʼAquila, Italy) and Prof. Errico Pressutti (Gran Sasso Science Institute, Italy) submitted to publication “Hydrodynamic limit for interacting neurons,” in which they introduce efficient descriptive mechanisms of interacting neurons in a large scale. (Links to these papers are given at the end of this piece.)</p>
+<p align="justify">The 2013 and 2014 articles presented initial elements of the development of a coherent theory to understand neuronal collective dynamics. “It is fair to say that in the literature there are hundreds of models for multiple interacting neurons –a quick search on 'neural model' could give the flavor of the Babylonian mess”, said Dr. Takahaski, according to whom “very few of them have tried to develop a coherent and rigorous theory of nervous system that can give insights that cannot be obtained easily by observational work.” Commenting on the 2013 article, Dr. Takahashi believes that it could have a similar basic role as the Gibbs model in thermodynamics, because of its capacity to “describe the dynamics from scratch assuming few facts that a neuroscientist can agree on and study, in a mathematical rigorous way, if the model exhibits the macroscopic phenomena expected for a population of neurons.”</p>
+<p align="justify">Forthcoming publications on NeuroMatʼs new mathematical theory are manyfold. Researchers are interested in expanding their explanatory model and allow for random evolution of synaptic connections, which would lead them to model plasticity at a neuronal level. There are also ongoing studies on why important neuronal systems synchronize, that is, show a tendency of spiking at the same time, and on what mathematical properties can be derived from the proposed framework for neuroscience. In 2014-2015, researchers expect to submit at least fifteen papers for publication on NeuroMatʼs class of models.</p>
+<p align="justify"><strong>Links to papers</strong></p>
+<ul>
+<li><a href="../infinite-systems-of-interacting-chains-with-memory-of-variable-lengtha-stochastic-model-for-biological-neural-nets/index.html" target="blank">Galves, A., and Löcherbach, E. (2013) "Infinite Systems of Interacting Chains with Memory of Variable Length—A Stochastic Model for Biological Neural Nets." Journal of Statistical Physics 151.5: 896-921.</a></li>
+<li><a href="../hydrodynamic-limit-for-interacting-neurons/index.html" target="blank">De Masi, A., Galves, A., Löcherbach, E., and Presutti, E. (2014). Hydrodynamic limit for interacting neurons. arXiv preprint arXiv:1401.4264.</a></li>
+</ul>
+<p><i>This piece is part of NeuroMat's Newsletter #2. <a href="../../newsletter/2/index.html">Read more here</a></i></p>
+        
+    
+
+    
+    
+        
+        <a class="btn btn-sm share-twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A//neuromat.numec.prp.usp.br/content/neuromat-mathematical-models-yield-basic-clues-to-neural-functioning/&amp;text=NeuroMat%20mathematical%20models%20yield%20basic%20clues%20to%20neural%20functioning">Share on Twitter</a>
+        <a class="btn btn-sm share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://neuromat.numec.prp.usp.br/content/neuromat-mathematical-models-yield-basic-clues-to-neural-functioning/">Share on Facebook</a>
+        
+    
+
+
+                </div>
+                <div class="col-md-3 right">
+                    <div class="panel panel-default">
+                        
+    
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroCineMat</th>
+        </tr>
+        <tr>
+            <td>
+                Featuring this week:<br>
+                <div class="embed-responsive embed-responsive-4by3">
+
+<!--
+                  <iframe src="https://www.youtube-nocookie.com/embed/FgQIpJvBB4A" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+-->
+                  <iframe src="https://www.youtube.com/embed/playlist?list=PLXUXkbNfNLDaP7Xzt4dXGIYEoJfraPgWr&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Newsletter</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Stay informed on our latest news!</p>
+                <form enctype="multipart/form-data" method="post" action="https://neuromat.numec.prp.usp.br/newsletter/subscription/">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='KzsWPtndJlZUeZKfSF5h5gC1Pr9QXJlgaLyEUPfqffS7nRgueBOqLX7irZw14Qp8' />
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" name="email" placeholder="E-mail" required="" aria-describedby="basic-addon1">
+                    </div>
+                    <br>
+                    <button class="btn btn-success" id="id_submit" name="submit" value="Subscribe" type="submit">Subscribe</button>
+                </form>
+                <br>
+                <p><a href="../../newsletter/previous/index.html">Previous issues</a></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Follow Us on Facebook</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+<!-- 
+                <div class="fb-page" data-href="https://www.facebook.com/neuromathematics/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+-->
+                    <blockquote cite="https://www.facebook.com/neuromathematics/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/neuromathematics/">NeuroMat - Research Center for Neuromathematics</a>
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Podcast A Matemática do Cérebro</th>
+        </tr>
+        <tr>
+            <td>
+                <a title="Podcast a Matemática do Cérebro" href="https://podcast.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/podcast.png" class="img-responsive center-block" alt="Podcast A Matemática do Cérebro">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Brachial Plexus Injury Initiative</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://abraco.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/logoabraco.png" class="img-responsive center-block" alt="Logo of the NeuroMat Brachial Plexus Injury Initiative">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">Neuroscience Experiments System</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/neuromat/nes/blob/master/README.md" target="_blank">
+                    <img src="../../static/img/banner_nes.png" class="img-responsive center-block" style="width: 100%;"  alt="Logo of the Neuroscience Experiments System">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat Parkinson Network</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://amparo.numec.prp.usp.br/" target="_blank">
+                    <img src="../../static/img/amparo.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat Parkinson Network">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th class="table_sidebar">NeuroMat's scientific-dissemination blog</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://difusaoneuromat.wordpress.com/" target="_blank">
+                    <img src="../../static/img/logo-blog.jpg" class="img-responsive center-block" alt="Logo of the NeuroMat's scientific-dissemination blog">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                
+
+<div id="id_footer_section" class="container neuromat-footer">
+    <div class="col-md-6 footer-content-align">
+        <p class="fapesp-icon">Supported by</p>
+        <a href="http://www.fapesp.br/" target="_blank"><img src="../../static/img/fapesp.png" alt=""></a>
+    </div>
+    <div class="col-md-6 footer-content-align">
+        <p>Hosted by</p>
+        <a href="http://usp.br/" target="_blank"><img  src="../../static/img/usp.png" alt=""></a>
+    </div>
+    <div class="col-md-12">
+        <hr>
+    </div>
+
+    <section class="col-md-3">
+        <h4>Related Projects</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="http://abraco.numec.prp.usp.br/" target="_blank">ABRAÇO</a></li>
+            <li class="list-group-item"><a href="https://amparo.numec.prp.usp.br/" target="_blank">AMPARO</a></li>
+            <li class="list-group-item"><a href="http://game.numec.prp.usp.br/" target="_blank">Jogo do Goleiro</a></li>
+            <li class="list-group-item"><a href="https://web.archive.org/web/20220813210730/https://www.numec.prp.usp.br/" target="_blank">NUMEC</a></li>
+        </ul>
+    </section>
+    <section class="col-md-3">
+        <h4>Follow us</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="https://www.facebook.com/neuromathematics" target="_blank"> <span class="fab fa-facebook"></span>Facebook</a></li>
+            <li class="list-group-item"><a href="https://www.youtube.com/neuromathematics" target="_blank"> <span class="fab fa-youtube"> </span>Youtube</a></li>
+            <li class="list-group-item"><a href="https://github.com/neuromat/" target="_blank"> <span class="fab fa-github"> </span>Github</a></li>
+        </ul>
+    </section>
+    <section id="id_footer_contact" class="col-md-6">
+        <h4>Contact</h4>
+        <div id="id_footer_contact">
+            <p>
+                Address: <br>
+                Matao St., 1010 - Cidade Universitária - São Paulo - SP - Brasil. 05508-090.
+            </p>
+            <p>
+                Phone: <br>
+                +55 11 3091-1717
+            </p>
+            <p>
+                Email: <br>
+                neuromat@numec.prp.usp.br
+            </p>
+        </div>
+    </section>
+
+    <div id="id_footer_license" class="footer-license">
+        <p>
+            This site content is licensed under a Creative Commons Attributions 4.0
+        </p>
+    </div>
+</div>
+
+            </div>
+        </footer>
+
+        
+            
+
+
+
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46648216-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        
+
+    </body>
+
+<!-- Mirrored from neuromat.numec.prp.usp.br/content/neuromat-mathematical-models-yield-basic-clues-to-neural-functioning/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Oct 2025 13:08:24 GMT -->
+</html>
